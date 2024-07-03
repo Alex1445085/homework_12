@@ -3,9 +3,9 @@ public class Book {
     private Author author;
     private int publishingYear;
 
-    public Book(String nameBook, Author author, int publishingYear) {
+    public Book(String nameBook, Author avtor, int publishingYear) {
         this.nameBook = nameBook;
-        this.author = author;
+        this.author = avtor;
         this.publishingYear = publishingYear;
     }
     public String getNameBook() {
@@ -25,5 +25,7 @@ public class Book {
             System.out.println("Ошибка ввода года издания.");
         }
     }
-
+    public String toString() {
+        return "Книга - " + nameBook + ", автор - " + author + ", год издания - " + publishingYear;
+     }
 }
